@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>
+		Test JavaScript
+		</title>
+		<script>
+			alert("Hello im a snail :D");
+
+			function changeColor(){
+				//change color
+				//document.getElementById("PURPLE").style.background = "pink";
+
+				//change text
+				document.getElementById("PURPLE").innerHTML = "pink";
+				//change fo
+				document.getElementById("PURPLE").style.color = "pink";
+			
+			}		
+
+			function changeColor1(){
+					//change text
+				document.getElementById("PINK").innerHTML = "purple";
+				//change fo
+				document.getElementById("PINK").style.color = "purple";	
+			}
+		</script>
+
+		<style type="text/css">
+			a:link{
+				color:pink;
+			}
+			a:visited{
+				color:pink;
+			}
+			a:hover{
+			font-size:40px;
+			}
+		</style>
+	</head>
+	<body style="background-color:black;color:black;
+		font-size:30px;font-weight:bolder;">
+		<div style="margin:30px;background-color:white;padding:30px;border-radius:100px;text-align:center;">
+		<nav>
+			 <a href="index.html" />
+			 		--> Home <--
+			 	</a>
+			 <a href="projects.html" />
+			 		--> Project <--
+			 	</a> 
+			 <a href="myloveofsnails.html" />
+			 		--> My Love Of Snails <--
+			 	</a>
+			 <a href="aboutme.html" />
+			 		--> About Me <--
+			 	</a>
+			</nav>
+				<section>
+					<p style="color:purple;" id="PURPLE" onclick="changeColor();">
+						PURPLE
+					</p>
+				</section>
+				<section>
+					<p style="color:pink;" id="PINK" onclick="changeColor1();">
+						PINK
+					</p>
+				</section>
+			</div>
+		</body>
+</html>
