@@ -1,6 +1,11 @@
 <html>
 	<head>
 		<title>About me</title>
+			<script>
+				function clickMe(){
+					document.getElementById("circle") .innerHTML = "Hello";
+				}
+			</script>
 		<style type="text/css">
 			a:link{
 			color:pink;
@@ -30,12 +35,15 @@
 			 		--> About Me <--
 			 	</a>
 		</nav>
+
+
 			<section>
+				<div id="circle" style="color:white;height:70px;width:117px;background-color:black;border-radius:70px;position:relative;top:100px;left:375px;padding-top:50px; "></div>
 					<img src="https://i.pinimg.com/474x/4a/53/55/4a5355978d95f27b6346e8163325d414--tattoo--a-tattoo.jpg" style="height:200px;" />
 					<br>
 					Name: <input type="text" />
-					<input type="button" value="click me please :P" />
-			<section/>
+					<input type="button" value="click me please :P" onclick="clickMe();" />
+			</section>
 			</div>
 		</body>
 </html>
