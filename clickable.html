@@ -1,34 +1,6 @@
 <html>
 	<head>
 		<title>About me</title>
-			<script>
-				function clickMe() {
-					var name = document.getElementById("nameText") .value;
-					document.getElementById("circle").innerHTML = "Hello, " + name + "!";
-					document.getElementById("circle").style.color = "white";
-					document.getElementById("circle").style.backgroundColor = "black";
-				}
-				function clickMe2() {
-					var name = document.getElementById("nameText2") .value;
-					document.getElementById("circle2").innerHTML = "Your age -> " + name + "!";
-					document.getElementById("circle2").style.color = "white";
-					document.getElementById("circle2").style.backgroundColor = "black";
-				}
-
-				function Test(divName) {
-					setInterval(function(){ makeBlack(divName);}, 1000);
-					setInterval(function(){ makeWhite(divName);}, 2000);
-
-				}
-
-				function makeBlack(divName){
-					document.getElementById(divName).style.backgroundColor = "black"; 
-				}
-
-				function makeWhite(divName){
-					document.getElementById(divName).style.backgroundColor = "white";
-				}
-			</script>
 		<style type="text/css">
 			a:link{
 			color:pink;
@@ -41,9 +13,9 @@
 			}
 			</style>
 	</head>
-		<body id="crazy" style="background-color:black;color:black;
-		font-size:16px;font-weight:bolder;">
-		<div id="crazy2" style="margin:30px;background-color:white;padding:30px;border-radius:100px;text-align:center;">
+		<body style="background-color:black;color:black;
+		font-size:30px;font-weight:bolder;">
+		<div style="margin:30px;background-color:white;padding:30px;border-radius:100px;text-align:center;">
 		<nav>
 			 <a href="index.html" />
 			 		--> Home <--
@@ -58,25 +30,17 @@
 			 		--> About Me <--
 			 	</a>
 		</nav>
-
-
 			<section>
-				<div id="circle" style="color:white;height:70px;width:117px;background-color:white;border-radius:70px;position:relative;top:100px;left:375px;padding-top:50px; "></div>
 					<img src="https://i.pinimg.com/474x/4a/53/55/4a5355978d95f27b6346e8163325d414--tattoo--a-tattoo.jpg" style="height:200px;" />
 					<br>
-					Name: <input type="text" id="nameText" value="" />
-					<input type="button" value="click me please :P" onclick="clickMe();" />
-			</section>
-				<div id="circle2" style="color:white;height:70px;width:117px;background-color:white;border-radius:70px;position:relative;top:11px;left:375px;padding-top:50px; "></div>
-					<img src="https://static.boredpanda.com/blog/wp-content/uploads/2015/07/cute-bunny-sea-slug-jorunna-parva-11.jpg" style="height:136px;" />
-					<br>
-					Age: <input type="number" id="nameText2" value="" />
-					<input type="button2" value="click me please :P" onclick="clickMe2();" />
+					Name: <input type="text" />
+					<input type="button" value="click me please :P" />
+			<section/>
 			<section>
-					<input type="button" value="click me please :P" onclick="Test('crazy');" />
-			</section>
-			<section>
-					<input type="button" value="click me please :P" onclick="Test('crazy2');" />	
+
+
+
+
 			</section>
 			</div>
 		</body>
