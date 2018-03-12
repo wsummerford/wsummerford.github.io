@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>
+		Ball adventure
+		</title>
+
+		<script type="text/javascript">
+		var ballTopValue = 100;
+		var ballBottomValue = 100;
+		  function myKeyPress(e){
+		    var keynum;
+
+		    if(window.event) { // IE                    
+		      keynum = e.keyCode;
+		    } else if(e.which){ // Netscape/Firefox/Opera                   
+		      keynum = e.which;
+		    }
+
+		    alert(String.fromCharCode(keynum));
+
+		    if(String.fromCharCode(keynum) == "s"){
+		    	
+		    	ballBottomValue = ballBottomValue + 100;
+		    	document.getElementById("ball").style.top = ballBottomValue + "px";
+		    }
+		    else if(String.fromCharCode(keynum) == "w"){
+
+		    	ballTopValue = ballTopValue + 100;
+		    	document.getElementById("ball").style.top = ballTopValue + "px";
+		    
+		    }
+
+		  }
+		</script>
+	</head>
+	<body>
+		<form>
+		  <input type="text" onkeypress="return myKeyPress(event)" />
+		   <div id="ball" style="height:100px; width:100px;border-radius:50px;background-color:yellow;position:fixed; top: 0; left: 0;">
+
+		   </div>
+		</form>
+	</body>
+</html>
+	
