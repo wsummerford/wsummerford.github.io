@@ -7,7 +7,7 @@
 		<script type="text/javascript">
 			var ballTopValue = 0;
 			var ballLeftValue = 0;
-			
+			var ballMovementIncrement = 10;
 			//while(window.onkeyup){
 				window.onkeyup = function(e) {
 				   var key = e.keyCode ? e.keyCode : e.which;
@@ -31,29 +31,37 @@
 
 			
 			function wkey(){
-				ballTopValue = ballTopValue - 100;
-				document.getElementById("ball").style.top = ballTopValue + "px";
+					
+
+				if (){
+					ballTopValue = ballTopValue - ballMovementIncrement;
+					document.getElementById("ball").style.top = ballTopValue + "px";
+				}
+
 			}
 
 			function skey(){
 				//if(ballTopValue >= 0){
-						ballTopValue = ballTopValue + 100;
+						ballTopValue = ballTopValue + ballMovementIncrement;
 						document.getElementById("ball").style.top = ballTopValue + "px";
 				//}
 			}
 
 			function akey(){
 				//if(ballLeftValue >= 0){
-						ballLeftValue = ballLeftValue - 100;
+						ballLeftValue = ballLeftValue - ballMovementIncrement;
 						document.getElementById("ball").style.left = ballLeftValue + "px";
 				//}
 			}
 
 			function dkey(){
-				ballLeftValue = ballLeftValue + 100;
+				ballLeftValue = ballLeftValue + ballMovementIncrement;
 				document.getElementById("ball").style.left = ballLeftValue + "px";
 
 			}
+
+
+
 		</script>
 	</head>
 	<body style="width:100%;background-color:black;">
