@@ -7,7 +7,7 @@
 		<script type="text/javascript">
 			var ballTopValue = 0;
 			var ballLeftValue = 0;
-			var ballMovementIncrement = 10;
+			
 			//while(window.onkeyup){
 				window.onkeyup = function(e) {
 				   var key = e.keyCode ? e.keyCode : e.which;
@@ -31,37 +31,34 @@
 
 			
 			function wkey(){
-					
-
-				if (){
-					ballTopValue = ballTopValue - ballMovementIncrement;
-					document.getElementById("ball").style.top = ballTopValue + "px";
-				}
-
+				ballTopValue = ballTopValue - 10;
+				document.getElementById("ball").style.top = ballTopValue + "px";
 			}
 
 			function skey(){
 				//if(ballTopValue >= 0){
-						ballTopValue = ballTopValue + ballMovementIncrement;
+						ballTopValue = ballTopValue + 10;
 						document.getElementById("ball").style.top = ballTopValue + "px";
 				//}
 			}
 
 			function akey(){
-				//if(ballLeftValue >= 0){
-						ballLeftValue = ballLeftValue - ballMovementIncrement;
+			if(ballLeftValue <= 0 ){
+				alert("I am an alert box!");
+
+						ballLeftValue = ballLeftValue - 10;
 						document.getElementById("ball").style.left = ballLeftValue + "px";
-				//}
+				}
 			}
 
 			function dkey(){
-				ballLeftValue = ballLeftValue + ballMovementIncrement;
-				document.getElementById("ball").style.left = ballLeftValue + "px";
+			if(ballLeftValue <= 30 ){
+				alert("I am an alert box!");
 
+					ballLeftValue = ballLeftValue + 10;
+					document.getElementById("ball").style.left = ballLeftValue + "px";
+				}
 			}
-
-
-
 		</script>
 	</head>
 	<body style="width:100%;background-color:black;">
